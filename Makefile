@@ -1,15 +1,19 @@
-NOM_DU_DOCUMENT=	cartes
-FICHIERS=		mots phrases verbes conjugaisons
+FICHIERS!=	find contenu -type f -name '*.csv' -exec sh -c '[ $$(wc -l < "{}") -gt 0 ]' \; -print0 | xargs -0 -n1 basename | xargs -L1 -n1 -I'{}' basename '{}' '.csv'
 
-tout: ${NOM_DU_DOCUMENT}.pdf
+tout: ${FICHIERS:@.f.@${.f.}.pdf@}
 
-source: ${NOM_DU_DOCUMENT}.tex
+source: ${FICHIERS:@.f.@${.f.}.tex@}
 
-${NOM_DU_DOCUMENT}.tex: csv-to-cards.awk ${FICHIERS:@f@contenu/$f.csv@}
-	gawk -f csv-to-cards.awk ${FICHIERS:@f@contenu/$f.csv@} > ${NOM_DU_DOCUMENT}.tex
+.for fichier in ${FICHIERS}
+${fichier}.tex: csv-to-cards.awk contenu/${fichier}.csv
+	gawk -f csv-to-cards.awk contenu/${fichier}.csv > ${fichier}.tex
 
-${NOM_DU_DOCUMENT}.pdf: ${NOM_DU_DOCUMENT}.tex
-	pdflatex -interaction=nonstopmode ${NOM_DU_DOCUMENT}
+${fichier}.pdf: ${fichier}.tex
+	pdflatex -interaction=nonstopmode ${fichier}
+.endfor
+
+publication: tout
+	tar cJvf cartes.txz ${FICHIERS:@.f.@${.f.}.pdf@}
 
 nettoyer:
-	rm -f texput.*
+	rm -f *.aux *.log *.tex *.synctex.gz

@@ -9,6 +9,12 @@ BEGIN {
     FS = "|"
     print "\\documentclass[avery5371,frame]{flashcards}"
     print
+    print "\\usepackage[T1]{fontenc}"
+    print "\\usepackage[french]{babel}"
+    print "\\usepackage[autolanguage]{numprint}"
+    print "\\usepackage{hyphenat}"
+    print "\\hyphenation{mate-mática recu-perar}"
+    print
     print "\\begin{document}"
     print "    \\sffamily"
 }
