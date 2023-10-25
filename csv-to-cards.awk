@@ -15,6 +15,8 @@ BEGIN {
     print "\\usepackage{hyphenat}"
     print "\\hyphenation{mate-mática recu-perar}"
     print
+    print "\\let\\dot\\textperiodcentered"
+    print
     print "\\begin{document}"
     print "    \\sffamily"
 }
