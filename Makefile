@@ -15,5 +15,5 @@ ${fichier}.pdf: ${fichier}.tex
 publication: tout
 	tar cJvf cartes.txz ${FICHIERS:@.f.@${.f.}.pdf@}
 
-nettoyer:
+propre:
 	rm -f *.aux *.log *.tex *.synctex.gz
