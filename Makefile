@@ -36,16 +36,16 @@ sources: ${TEX_FILES}
 # We store a mapping by reconstructing path: reverse of __ -> /
 
 build/%.tex: csv-to-cards.awk
-	@mkdir -p build
-	@stem="$*"; \
+	mkdir -p build
+	stem="$*"; \
 	orig_path=$$(echo $$stem | sed 's|__|/|g'); \
 	orig_csv="contenu/$$orig_path.csv"; \
 	echo "[AWK] $$orig_csv -> $@"; \
 	gawk -f csv-to-cards.awk $$orig_csv > $@
 
 build/%.pdf: build/%.tex
-	@echo "[PDF] $<"; \
-	pdflatex -interaction=nonstopmode -output-directory build $< >/dev/null
+	echo "[PDF] $<"; \
+	pdflatex -interaction=nonstopmode -output-directory build $<
 
 archive publication: cards
 	tar cJvf cartes.txz ${PDF_FILES}
@@ -68,9 +68,9 @@ validate:
 			fi; \
 			case "$$line" in *' '|) printf 'Trailing space in %s: %s\n' "$$f" "$$line"; failed=1;; esac; \
 		done < $$f; \
-	done <<EOF
-${CSV_FILES}
-EOF
+	done <<EOF \
+${CSV_FILES} \
+EOF \
 	@[ $$failed -eq 0 ] && echo "Validation passed." || (echo "Validation FAILED"; exit 1)
 
 clean:
