@@ -1,0 +1,116 @@
+# Manifest describing all flashcard CSV datasets.
+# Fields:
+#   id: short identifier (folder/name without extension)
+#   path: relative path to CSV
+#   category: high-level grouping (conjugaisons|vocabulaire|grammaire|expressions)
+#   description: human description (edit freely)
+#   direction: prompt->answer language direction (e.g., en->fr, mixed)
+#   tags: optional list of extra tags
+#   notes: optional free-form notes
+#
+# This file allows tooling / future exporters to know what exists without
+# filename scraping and to attach metadata (difficulty, frequency, etc.).
+
+sets:
+  - id: conjugaisons/conjugaisons-présent
+    path: contenu/conjugaisons/conjugaisons-present.csv
+    category: conjugaisons
+    description: Présent tense conjugations & high-frequency verbs
+    direction: mixed
+    tags: [tense, present]
+  - id: conjugaisons/conjugaisons-imparfait
+    path: contenu/conjugaisons/conjugaisons-imparfait.csv
+    category: conjugaisons
+    description: Imparfait usage & examples
+    direction: mixed
+    tags: [tense, imparfait]
+  - id: conjugaisons/conjugaisons-passé-composé
+    path: contenu/conjugaisons/conjugaisons-passé-composé.csv
+    category: conjugaisons
+    description: Passé composé forms, auxiliaries, participles
+    direction: mixed
+    tags: [tense, passé-composé]
+  - id: conjugaisons/conjugaisons-passé-récent
+    path: contenu/conjugaisons/conjugaisons-passé-récent.csv
+    category: conjugaisons
+    description: Passé récent construction (venir de + infinitif)
+    direction: mixed
+    tags: [tense, passé-récent]
+  - id: conjugaisons/conjugaisons-futur-proche
+    path: contenu/conjugaisons/conjugaisons-futur-proche.csv
+    category: conjugaisons
+    description: Futur proche (aller + infinitif)
+    direction: mixed
+    tags: [tense, futur-proche]
+  - id: conjugaisons/conjugaisons-futur-simple
+    path: contenu/conjugaisons/conjugaisons-futur-simple.csv
+    category: conjugaisons
+    description: Futur simple examples
+    direction: mixed
+    tags: [tense, futur-simple]
+  - id: conjugaisons/conjugaisons-conditionel-présent
+    path: contenu/conjugaisons/conjugaisons-conditionel-présent.csv
+    category: conjugaisons
+    description: Conditionnel présent usage
+    direction: mixed
+    tags: [tense, conditionnel]
+  - id: conjugaisons/conjugaisons-impératif
+    path: contenu/conjugaisons/conjugaisons-impératif.csv
+    category: conjugaisons
+    description: Impératif forms and examples
+    direction: mixed
+    tags: [tense, impératif]
+  - id: conjugaisons/conjugaisons-subjonctif
+    path: contenu/conjugaisons/conjugaisons-subjonctif.csv
+    category: conjugaisons
+    description: Subjonctif triggers and examples
+    direction: mixed
+    tags: [tense, subjonctif]
+  - id: vocabulaire/mots
+    path: contenu/vocabulaire/mots.csv
+    category: vocabulaire
+    description: Mixed high-frequency words
+    direction: en->fr
+    tags: [core, misc]
+  - id: vocabulaire/verbes
+    path: contenu/vocabulaire/verbes.csv
+    category: vocabulaire
+    description: Common verbs and usage nuances
+    direction: en->fr
+    tags: [verbs]
+  - id: vocabulaire/contraires
+    path: contenu/vocabulaire/contraires.csv
+    category: vocabulaire
+    description: Pairs of opposites
+    direction: fr<->fr
+    tags: [pairs, antonyms]
+  - id: vocabulaire/prépositions
+    path: contenu/vocabulaire/prépositions.csv
+    category: vocabulaire
+    description: Prepositions and usage notes
+    direction: en->fr
+    tags: [prepositions]
+  - id: grammaire/pronoms-possessifs
+    path: contenu/grammaire/pronoms-possessifs.csv
+    category: grammaire
+    description: Possessive pronouns reference (placeholder)
+    direction: mixed
+    tags: [pronoms]
+  - id: grammaire/pronoms-relatifs
+    path: contenu/grammaire/pronoms-relatifs.csv
+    category: grammaire
+    description: Relative pronouns usage & exercises
+    direction: mixed
+    tags: [pronoms]
+  - id: grammaire/comparatif-superlatif
+    path: contenu/grammaire/comparatif-superlatif.csv
+    category: grammaire
+    description: Comparative and superlative constructions
+    direction: mixed
+    tags: [comparatif, superlatif]
+  - id: expressions/phrases
+    path: contenu/expressions/phrases.csv
+    category: expressions
+    description: Everyday phrases & conversation fillers
+    direction: en->fr
+    tags: [phrases, conversation]
