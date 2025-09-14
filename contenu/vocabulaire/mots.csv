@@ -1,16 +1,16 @@
 Hello|Bonjour
-Hello (casual)|Salut
+Hello (casual), Hey|Salut\\Âllo (Québec)
 Thank you|Merci
 less|moins
 between|entre
 equally|également
 indeed|en effet
+basically|effectivement
 country|pays
 as the case may be|le cas échéant
 rate/level|taux
 group|groupe
 as/just as/like|ainsi que
-will be|sera
 company|entreprise
 against/next to|contre
 last/prior|dernier
@@ -20,12 +20,12 @@ products|les produits (m)
 that|cela
 profit|le profit, le bénéfice
 benefit|(nom) l'avantage, le bénéfice\\~\\(verbe) profiter
-rise, increase|hausse
+the rise, the increase|l'augmentation, la hausse
 often|souvent
 above all, especially|surtout
 instead|plutôt
-soon|bientôt, tantôt
-quickly|vite
+soon|bientôt\\tantôt (Québec)
+quickly|vite, rapidement
 almost|presque
 number|le nombre
 when|quand, lorsque
@@ -34,25 +34,25 @@ could|pourrait
 should|devrait
 would|serait
 better|mieux
-drop/fall/decrease|baisse
+the drop/fall/decrease|baisse
 result|le résultat
-start, begining|le début, le départ, le commencement
+the start, begining|le début, le départ, le commencement
 besides, furthermore, moreover, what’s more|d’ailleurs
 notably|notamment
 however, meanwhile|cependant
 as, since, because|car
 however, nonetheless|toutefois
 according to, in accordance with|selon
-seems|semble
 strong|fort
 fresh/recent/cool|frais
 however|pourtant
 management, control|gestion
 during|pendant
 sometimes|parfois
-form, shape|la forme
-state|l'état
+the form, shape|la forme
+state|l'état (m)
 as much as|autant que
+so much, so many|tant de
 medium (size), average|le moyen
 way, method|la façon, la manière, le moyen
 road|la route, le chemin
@@ -62,15 +62,15 @@ sidewalk|le trottoir
 bridge|le pont, la passerelle
 choice|le choix, la sélection, l'élection
 enough, quite|assez
-numerous, many|nombreux
+numerous, many|nombreux, nombreuses
 about, close to, around|environ
 next, thereafter|ensuite
-sense|sens
+sense|sens\\Prononce bien le <<~S~>> final.
 wallet|la portefeuille
 clock|l'horloge (f)
 somewhere else|ailleurs
-so, so much (i.e., he is {\itshape so} good)|tellement
-none|aucun\\i.e., «~Il n'a aucun désir~» = "He doesn't have any desire"
+so, so much\\(i.e., he is {\itshape so} good)|tellement
+none|aucun
 hit, strike|coup
 clean|propre
 acheive|atteindre
@@ -86,7 +86,6 @@ a long time|longtemps
 agreement|concurrence
 sad|triste
 in brief, to summarize|En résumé, en bref
-It is necessary \dots|Il faut \dots\\ou\\Il est crucial \dots\\ou\\Il est nécessaire \dots
 très grand|immense
 très beau|magnifique
 très bon|délicieux
@@ -131,12 +130,10 @@ self-esteem|amour-propre
 bretteux, bretteuse (nom et adjectif)|a person who always finds a way to be late and can never decide anything
 perfectly|parfaitement
 quiconque|anyone
-soit|either
-either|soit
 drill (tool)|la perceuse
 on the other hand|en revanche\\~\\de l'autre côté\\~\\par contre
-as to, as for|quant
-quant|as to\\~\\as for
+as to, as for|quant à
+quant à|as to\\~\\as for
 garden fences|clôtures des jardins
 Quelle est la difference entre <<~beau~>>, <<~bel~>>, et <<~belle~>>?|beau --- nom masculin qui commence avec une consonne\\~\\bel --- nom masculin qui commence avec une voyelle\\~\\belle --- nom féminin
 unwanted|indésirable
@@ -151,13 +148,13 @@ fear, terror, dread|crainte, terreur, effroi, épouvante
 criminal|un criminel, un malfaiteur
 Quelle est la difference entre les verbes <<~réussir~>> et <<~aboutir~>>?|\small <<~Réussir~>> peut s'employer avec une chose ou une activité (<<~son projet a enfin réussi~>>) ou un individu (<<~il a réussi son examen~>>, <<~elle a réussi à les convaincre~>>).\\~\\<<~Aboutir~>> est plus ou moins synonyme (<<~son projet a enfin abouti~>>) mais dans ce verbe il y a l'idée de <<~finir~>> (puisqu'il y a <<~bout~>> = fin) ou de <<~conduire à quelque chose~>>: <<~la séance n'a pas abouti~>>; <<~la voiture a heurté un arbre avant de finir dans un pré~>>. Il y a donc bien deux sens au verbe <<~aboutir~>>.
 crazy, nuts, mad|dingue
-the future|l'avenir (m)\\~\\L'avenir appartient à nos enfants. Il est impossible de prévoir l'avenir.
+the future|l'avenir (m)
 the truth|la vérité
 tout de coup|all of a sudden, suddenly
-du coup|so, ergo\\~\\Du coup, on fait quoi demain ?
-proof, evidence|la preuve, les preuves\\~\\Mon alibi est la preuve que je suis innocent. Ils ont abandonné les poursuites car les preuves étaient insuffisantes.
-franchement|frankly, honestly\\~\\Franchement, après notre dernière conversation je savais pas si t'accepterais de me reparler mais ton message semblait si sincère. Je m'y attendais vraiment pas.
-a beast|une bête\\~\\Il avait même de l'écume à la bouche. C'était comme regarder dans les yeux d'une bête enragée.
+du coup|so, ergo\\~\\e.x., Du coup, on fait quoi demain ?
+proof, evidence|la preuve, les preuves
+franchement|frankly, honestly
+a beast|une bête
 light [color]|[couleur] clair
 dark [color]|[couleur] foncé
 neon [color]|[couleur] fluo
@@ -191,6 +188,5 @@ this kind of bullshit|ce genre de conneries
 childish|puéril(e)
 pitiful|pitoyable, lamentable
 it's a load of crap|c'est de la merde en barre
-tu déconnes?|are you kidding?
-soigné(e)|impeccable
+tu [me] déconnes?|are you kidding?
 unmistakably|indubitablement
